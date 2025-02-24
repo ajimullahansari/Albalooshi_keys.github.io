@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Service Areas - Albalooshi Locksmiths Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .service-area {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            position: relative;
+        }
+        .service-area:hover {
+            transform: scale(1.05);
+        }
+        .service-area img {
+            width: 100%;
+            height: auto;
+        }
+        .content {
+            padding: 15px;
+        }
+        .map {
+            width: 100%;
+            height: 200px;
+            border: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        nav {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+        .logo {
+            width: 1cm;
+            height: 1cm;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            margin-top: 0.3cm;
+            margin-right: 0.3cm;
+            z-index: 1000;
+        }
+
+        @media screen and (max-width: 768px) {
+            .logo {
+                width: 0.8cm;
+                height: 0.8cm;
+                top: 5px;
+                right: 5px;
+                margin-top: 0.2cm;
+                margin-right: 0.2cm;
+            }
+        }
+        .call-icon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 2;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .call-icon:hover {
+            transform: scale(1.5);
+            background-color: #0056b3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .call-icon i {
+            color: white;
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .call-icon {
+                width: 40px;
+                height: 40px;
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .call-icon i {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Saif Albalooshi Locksmiths Solution Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="branches.html">Branches</a></li>
+            <li><a href="servicearea.html">Service Areas</a></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="container">
+        <div class="service-area">
+            <img src="images\jumeira park.jpg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Jumeirah Park Dubai UAE</h2>
+                <p>Offering a wide range of locksmith services including emergency lockout, key duplication, and security system installation.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151434.123456789!2d55.2708!3d25.2048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f68a1a1a1a1a1%3A0x1a1a1a1a1a1a1a1!2sJumeirah%20Park!5e0!3m2!1sen!2sau!4v1616161616161" allowfullscreen loading="lazy"></iframe>
+                
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\mina jabel ali.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Mina Jabel Ali Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115744.40808314714!2d55.05277860000002!3d24.96568075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f1212335809a9%3A0xa14e0c8de1c5300a!2sMina%20Jebel%20Ali%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740338119393!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </div>
+        </div>
+        <!-- Add more service areas as needed -->
+        <div class="service-area">
+            <img src="images\jabel ali village.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Jabel Ali Village Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57838.977965561004!2d55.1320146!3d25.03624175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f13221df91693%3A0xe776991f26288bcc!2sJebel%20Ali%20Village%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740338317620!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\AL Quoz 1.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Al Quoz - Al Quoz 1 Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14444.026843521879!2d55.25354864999999!3d25.16925125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69b8b4acbb9d%3A0xad3f2f4b18a97258!2sAl%20Quoz%20-%20Al%20Quoz%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740338460311!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\AL Quoz 3.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Al Quoz - Al Quoz 3 Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14445.025156748039!2d55.240395099999986!3d25.160822649999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69917023b571%3A0xe042edb11d6a7ebd!2sAl%20Quoz%20-%20Al%20Quoz%203%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740338543672!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Dubai silicon Oasis.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Dubai Silicon Oasis Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28899.22676331266!2d55.3887365!3d25.122051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f640f1dcd4111%3A0xcb38e7be624792c3!2sDubai%20Silicon%20Oasis%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740338615188!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Jumeoirah 1.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Jumeirah-Jumeirah 1 Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28874.84803942514!2d55.2584809!3d25.224931549999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4244dde67821%3A0x2a9b18ce766874cf!2sJumeirah%20-%20Jumeirah%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740338708334!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Dubai investment park.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Dubai investment park - Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28930.50397629099!2d55.16513225!3d24.989478300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f72f4b0b690f1%3A0xbe838b0fd118f9d1!2sDubai%20Investments%20Park%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740338772332!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Al barsha 1.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Al barsha - Al Barsha 1 - Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28902.11205843058!2d55.194475!3d25.109848699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b94ab31ca35%3A0x1d6c66f303155ccb!2sAl%20Barsha%20-%20Al%20Barsha%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740338836579!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Dubai Airport free zone.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Dubai Airport Freezone - Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.287914497108!2d55.37324759999999!3d25.2608984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5db3b14f9b09%3A0xcae0462a35a0d09!2sDubai%20Airport%20Free%20Zone%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740338890909!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\AL kasir Al marina.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Al Kasir Al Marina - Abu Dhabi UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.0438694251065!2d54.315854099999996!3d24.4839368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e65008e3cc819%3A0xab8967eb3f639e69!2sAl%20Kasir%20%2C%20Al%20Marina!5e0!3m2!1sen!2sin!4v1740339024980!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Dubai investment park 2.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Dubai investment park - 2 - Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28933.597125647124!2d55.20069839999999!3d24.9763318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f724973649927%3A0xbb1bc49cc01db348!2sDubai%20Investment%20Park%20-%202%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740339156686!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Al Sufouh Dubai internet city.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Al Sufouh - Dubai Internet City - Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14452.479035057462!2d55.162375!3d25.0978071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b6915f1434d%3A0x316198ea6ee3651e!2sAl%20Sufouh%20-%20Dubai%20Internet%20City%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740339254370!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\MIna jabel ali jabel ali freezone Dubai.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Mina Jabel Ali-Jabel Ali Freezone - Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115713.06942463179!2d55.05765069999999!3d24.998980350000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f1212286cda85%3A0xe1416ab0e66bdcbe!2sMina%20Jebel%20Ali%20-%20Jebel%20Ali%20Freezone%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740339345820!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Dubai investment park.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Jabel Ali Village - Discovery Gardens Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28919.036084874715!2d55.14472070000001!3d25.038162750000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6cd623c3f253%3A0x1bdcdc11b4126442!2sJebel%20Ali%20Village%20-%20Discovery%20Gardens%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740339619947!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Dubai investment park.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Jabel Ali Village - Discovery Gardens Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28919.036084874715!2d55.14472070000001!3d25.038162750000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6cd623c3f253%3A0x1bdcdc11b4126442!2sJebel%20Ali%20Village%20-%20Discovery%20Gardens%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740339619947!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\jbc.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Jumeirah business center Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9117913628115!2d55.140957975377674!3d25.07097867779247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6cae62b2630d%3A0xc3b17478e61f959a!2sJumeirah%20Business%20Center%201%20-%20Jumeirah%20Lake%20Towers%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740399937415!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Sport city dubai.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Sports City Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14459.706741203709!2d55.216941899999995!3d25.036562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6ddd39763a6f%3A0x57e0cc67b8f14b4c!2sDubai%20Sports%20City%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740400224903!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Moter city Dubai.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Moter City Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14458.706812767256!2d55.238592649999994!3d25.045043400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6e6d9f798d95%3A0x5d8a318f70af8dea!2sMotor%20City%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740400322901!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Al furjan city dubai.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Al Furjan - Al Furjan 1 Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14460.864549812535!2d55.15015485!3d25.0267381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6d3af3095965%3A0x992734920314d2cf!2sJebel%20Ali%20Village%20-%20Al%20Furjan%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740400462303!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Sonapur area Dubai.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Sonapur Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.836635075573!2d55.425232599999994!3d25.276080399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5fb139658b83%3A0x699e14c4aeee77d2!2sSonapur%20Dubai!5e0!3m2!1sen!2sin!4v1740400602850!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Dubai internet city.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Dubai internet city Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14452.479035057462!2d55.162375!3d25.0978071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b6915f1434d%3A0x316198ea6ee3651e!2sAl%20Sufouh%20-%20Dubai%20Internet%20City%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740400861607!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\International city Dubai.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>International City Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28889.313821424774!2d55.409975!3d25.163932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f614eb88deb71%3A0x1639bd9727e18e15!2sDubai%20International%20City%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740401806174!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="service-area">
+            <img src="images\Arjan Dubai.jpeg" alt="Dubai">
+            <a href="tel:+971524358561" class="call-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <div class="content">
+                <h2>Arjan City Dubai UAE</h2>
+                <p>Providing reliable locksmith services for residential and commercial properties.</p>
+                <iframe class="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28913.57724686739!2d55.216294230609265!3d25.06130597908564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6e62bc9cf949%3A0x643f68939c298463!2sArjan-Dubailand%20-%20Al%20Barsha%20South%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740402445570!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Albalooshi Keys. All rights reserved.<br><p style="background-color: rgb(255, 255, 255);"><a href="https://www.linkedin.com/in/ajimullahansari" target="_blank">Developed By : Er Ajim</a></p></p>
+    </footer>
+</body>
+</html>
